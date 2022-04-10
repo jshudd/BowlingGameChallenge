@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace BowlingGameChallenge
 {
@@ -11,6 +11,8 @@ namespace BowlingGameChallenge
 
         public static void PrintScoreBoard(Player p)
         {
+            Console.WriteLine("So, how'd you do?\n");
+
             var counter = 1;
             Console.Write("Frame    ");
             Console.Write("Roll 1    ");
