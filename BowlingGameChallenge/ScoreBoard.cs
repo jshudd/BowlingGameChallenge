@@ -30,7 +30,7 @@ namespace BowlingGameChallenge
             Console.Write($"{counter}        ");
             Console.Write($"{p.ScoreArray[1, counter - 1]}         ");
             Console.Write($"{p.ScoreArray[2, counter - 1]}         ");
-            Console.Write($"{p.ScoreArray[3, counter - 1]}         \n");
+            Console.Write($"{p.ScoreArray[3, counter - 1]}         \n\n");
 
         }
 
@@ -124,6 +124,18 @@ namespace BowlingGameChallenge
 
             Console.WriteLine($"Final Score: {p.Score}");
 
+            if (p.Score == 300)
+            {
+                Console.WriteLine("Whoa dude! Perfect Score! You should go pro!!\n");
+            }
+            else if(p.Score >= 200 && p.Score < 300)
+            {
+                Console.WriteLine("You're not too bad\n");
+            }
+            else if(p.Score < 200)
+            {
+                Console.WriteLine("You should come back more often to practice.");
+            }
         }
     }
 }
