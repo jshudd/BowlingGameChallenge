@@ -8,6 +8,8 @@ namespace BowlingGameChallenge
         {
             var p1 = new Player();
 
+            Startup.Welcome();
+
             do
             {
                 Roll.Bowl(p1);
