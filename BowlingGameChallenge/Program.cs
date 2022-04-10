@@ -6,7 +6,17 @@ namespace BowlingGameChallenge
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var p1 = new Player();
+
+            do
+            {
+                Roll.Bowl(p1);
+
+            } while (!Roll.IsGameOver(p1));
+
+            ScoreBoard.PrintScoreBoard(p1);
+
+            ScoreBoard.CalculateScore(p1);
         }
     }
 }
